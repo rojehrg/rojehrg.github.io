@@ -1,0 +1,59 @@
+/* Step 3: Remove default margin */
+html, body {
+    margin: 0;
+  }
+  
+  /* Step 4: Style the profile picture */
+  #profile-pic img {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  /* Step 5: Style the follow button */
+  #follow-button {
+    padding: 5px 30px;
+  }
+  
+  /* CSS for displaying images */
+.item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  /* Additional styling for spacing between items and rows */
+  .row {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Step 8: Create vertical spacing between rows */
+  .row + .row {
+    margin-top: 10px;
+  }
+  
+  /* Step 9: Add space between navigation bar items */
+  .navbar-item {
+    margin-right: 20px;
+  }
+  
+  /* Step 10: Create hover effect with opacity and transition */
+  .navbar-item:hover, #follow-button:hover, .item:hover {
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+  
+  /* Step 11: Increase font size of follow button on click */
+  #follow-button:active {
+    font-size: 18px;
+  }
+  
+  /* Step 12: Make navigation items cursor pointer */
+  .navbar-item, #follow-button, .item {
+    cursor: pointer;
+  }
+  
+  /* Step 13: Make text of navigation items opaque on hover */
+  .navbar-item:hover {
+    opacity: 1;
+  }
